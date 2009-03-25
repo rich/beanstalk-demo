@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  created_on: 2009-03-25
+  open_price: 1.5
+  close_price: 1.5
+  high_price: 1.5
+  low_price: 1.5
+  stock: 
+
+two:
+  created_on: 2009-03-25
+  open_price: 1.5
+  close_price: 1.5
+  high_price: 1.5
+  low_price: 1.5
+  stock: 

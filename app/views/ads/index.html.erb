@@ -1,0 +1,24 @@
+<h1>Listing ads</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Url</th>
+    <th>Body</th>
+  </tr>
+
+<% for ad in @ads %>
+  <tr>
+    <td><%=h ad.title %></td>
+    <td><%=h ad.url %></td>
+    <td><%=h ad.body %></td>
+    <td><%= link_to 'Show', ad %></td>
+    <td><%= link_to 'Edit', edit_ad_path(ad) %></td>
+    <td><%= link_to 'Destroy', ad, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New ad', new_ad_path %>
